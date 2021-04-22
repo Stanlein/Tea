@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+  background-color: #8e1d03ff;
+  text-align: center;
+  margin: 0%;
+  color: #f07c16ff;
+  font-family: "Rubik", sans-serif; }
+
+body {
+  margin: 0; }
+
+header {
+  font-size: 3rem;
+  font-weight: bold; }
+  header h1 {
+    margin: 2.5rem; }
+
+.timer {
+  font-size: 10rem;
+  color: #5e8f11ff; }
+  .timer p {
+    margin: 0; }
+
+.img__box {
+  padding-top: 5rem;
+  position: relative; }
+  .img__box img {
+    width: 80%; }
+
+.cloud {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #f1f1f1ff;
+  z-index: -5; }
+  .cloud__0 {
+    animation: smoke 5s ease infinite; }
+  .cloud__1 {
+    left: 40%;
+    width: 4rem;
+    height: 4rem;
+    animation: smoke 4s ease infinite; }
+  .cloud__2 {
+    left: 45%;
+    width: 4.5rem;
+    height: 4.5rem;
+    animation: smoke 4.5s ease infinite; }
+
+@keyframes smoke {
+  0% {
+    top: 33%;
+    opacity: 1; }
+  25% {
+    transform: scale(1.1) translateX(-50%); }
+  75% {
+    transform: scale(1.2) translateX(0%); }
+  100% {
+    top: -50%;
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(1.3) translateX(-25%); } }
+
+.btns {
+  padding: 2rem;
+  font-size: 6rem; }
+
+.fa {
+  text-shadow: 1px 1px #4f1002ff; }
+  .fa-pause {
+    display: none; }
+
+.options {
+  bottom: 0;
+  display: flex;
+  bottom: 0%;
+  border: 1px solid #f07c16ff;
+  margin-top: 2rem;
+  font-size: 6rem;
+  text-align: center; }
+
+.time {
+  border: 1px solid #f07c16ff;
+  color: #4f1002ff;
+  width: 33.33%; }
+  .time__option {
+    width: 100%;
+    display: inline-block; }
+
+.active {
+  background-color: #ff7505;
+  color: #f07c16ff;
+  background-color: #4f1002ff; }
